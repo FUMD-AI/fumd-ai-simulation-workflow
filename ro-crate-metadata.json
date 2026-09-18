@@ -1,0 +1,247 @@
+{
+  "@context": "https://w3id.org/ro/crate/1.1/context",
+  "@graph": [
+    {
+      "@type": "CreativeWork",
+      "@id": "ro-crate-metadata.json",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.1"
+      },
+      "about": {
+        "@id": "./"
+      }
+    },
+    {
+      "@type": [
+        "Dataset",
+        "SoftwareSourceCode"
+      ],
+      "@id": "./",
+      "name": "FUMD-AI Simulation Workflow: OMNeT++ 5G Urban Simulation Environment",
+      "description": "Complete workflow to install, patch, configure and run the 5G NR urban vehicular simulation used by the FUMD-AI project to generate synthetic network performance data for AI-based handover prediction.",
+      "datePublished": "2026-08-31",
+      "license": [
+        {
+          "@id": "https://spdx.org/licenses/MIT.html"
+        },
+        {
+          "@id": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "url": "https://github.com/FUMD-AI/fumd-ai-simulation-workflow",
+      "publisher": {
+        "@id": "https://eosc.eu/horizon-europe-projects/fumd-ai"
+      },
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-9537-415X"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-0034-2855"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-8985-0639"
+        }
+      ],
+      "funder": {
+        "@id": "https://eosc.eu"
+      },
+      "keywords": [
+        "5G NR",
+        "OMNeT++",
+        "Simu5G",
+        "Veins",
+        "SUMO",
+        "vehicular networks",
+        "handover prediction",
+        "FAIR workflow",
+        "EOSC"
+      ],
+      "programmingLanguage": [
+        {
+          "@id": "https://www.w3.org/TR/XML/"
+        },
+        "C++",
+        "Bash",
+        "NED"
+      ],
+      "hasPart": [
+        {
+          "@id": "FAIR_OMNeT_Workflow.md"
+        },
+        {
+          "@id": "scripts/"
+        },
+        {
+          "@id": "patches/"
+        },
+        {
+          "@id": "examples/"
+        }
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://orcid.org/0000-0001-9537-415X",
+      "name": "Cristina Bernad",
+      "affiliation": {
+        "@id": "https://www.umh.es"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://orcid.org/0000-0003-0034-2855",
+      "name": "Sonja Filiposka",
+      "affiliation": {
+        "@id": "https://www.ukim.edu.mk"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://orcid.org/0000-0002-8985-0639",
+      "name": "Katya Gilly",
+      "affiliation": {
+        "@id": "https://www.umh.es"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://www.umh.es",
+      "name": "Miguel Hernandez University"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://www.ukim.edu.mk",
+      "name": "Ss. Cyril and Methodius University in Skopje"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://eosc.eu",
+      "name": "EOSC",
+      "description": "FUMD-AI project, EOSC GRAVITY Grant 25-EOSC-GRV-INTER-013"
+    },
+    {
+      "@type": "File",
+      "@id": "FAIR_OMNeT_Workflow.md",
+      "name": "FUMD-AI Simulation Workflow Documentation",
+      "description": "Complete step-by-step workflow covering installation, source patching, configuration and execution of the OMNeT++ simulation environment.",
+      "encodingFormat": "text/markdown",
+      "license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    {
+      "@type": "Dataset",
+      "@id": "scripts/",
+      "name": "Simulation launch scripts",
+      "description": "Bash scripts for launching single or multiple simulation configurations from the terminal.",
+      "license": {
+        "@id": "https://spdx.org/licenses/MIT.html"
+      }
+    },
+    {
+      "@type": "Dataset",
+      "@id": "patches/",
+      "name": "Patched source files",
+      "description": "Modified source files for Simu5G 1.4.4 and Veins 5.3.1 fixing INET 3\u21924 migration bugs and adding FUMD-AI customisations. Files mirror their target paths in the OMNeT++ installation.",
+      "license": {
+        "@id": "https://spdx.org/licenses/MIT.html"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://omnetpp.org",
+      "name": "OMNeT++",
+      "version": "6.3.0",
+      "softwareRequirements": "Ubuntu Linux"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://github.com/Unipisa/Simu5G",
+      "name": "Simu5G",
+      "version": "1.4.4"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://veins.car2x.org",
+      "name": "Veins",
+      "version": "5.3.1"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://sumo.dlr.de",
+      "name": "SUMO",
+      "version": "1.22.0"
+    },
+    {
+      "@type": "Dataset",
+      "@id": "examples/",
+      "name": "Example simulation outputs",
+      "description": "Reference output from a 60-second run of VoipDl_900_1 configuration, included for reproducibility verification and preprocessing pipeline testing.",
+      "license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "hasPart": [
+        {
+          "@id": "examples/VoipDl-Urban-900_1_60s/"
+        }
+      ]
+    },
+    {
+      "@type": "Dataset",
+      "@id": "examples/VoipDl-Urban-900_1_60s/",
+      "name": "VoipDl-Urban-900_1_60s \u2014 60-second reference run",
+      "description": "Output of a 60-second simulation of the VoipDl_900_1 configuration: 900 configured vehicles, 30 active, 9 NR gNodeBs in Alicante city centre. Produced on 2026-08-31.",
+      "dateCreated": "2026-08-31",
+      "license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "hasPart": [
+        {
+          "@id": "examples/VoipDl-Urban-900_1_60s/scalar-0.sca"
+        },
+        {
+          "@id": "examples/VoipDl-Urban-900_1_60s/vector-0.vec"
+        },
+        {
+          "@id": "examples/VoipDl-Urban-900_1_60s/vector-0.vci"
+        },
+        {
+          "@id": "examples/VoipDl-Urban-900_1_60s/sumo_veins_mapping.txt"
+        }
+      ]
+    },
+    {
+      "@type": "File",
+      "@id": "examples/VoipDl-Urban-900_1_60s/scalar-0.sca",
+      "name": "scalar-0.sca",
+      "description": "OMNeT++ scalar output: 31,501 summary statistics across all network modules.",
+      "contentSize": "7340032",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "File",
+      "@id": "examples/VoipDl-Urban-900_1_60s/vector-0.vec",
+      "name": "vector-0.vec",
+      "description": "OMNeT++ vector output: 4,320 time-series signals per vehicle including servingCell, measuredSinrDl, averageCqiDl, rlcThroughputDl. Tracked by Git LFS.",
+      "contentSize": "105906176",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@type": "File",
+      "@id": "examples/VoipDl-Urban-900_1_60s/vector-0.vci",
+      "name": "vector-0.vci",
+      "description": "OMNeT++ vector index: maps signal names and module paths to byte offsets in vector-0.vec.",
+      "contentSize": "3981312",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "File",
+      "@id": "examples/VoipDl-Urban-900_1_60s/sumo_veins_mapping.txt",
+      "name": "sumo_veins_mapping.txt",
+      "description": "SUMO vehicle string ID to OMNeT++/Veins module index mapping. Required input to fumd-ai-preprocessing-workflow Step 4 (merge). 61 vehicles.",
+      "contentSize": "997",
+      "encodingFormat": "text/plain"
+    }
+  ]
+}

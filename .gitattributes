@@ -1,0 +1,4 @@
+# Git LFS tracking for large OMNeT++ output files
+# Vector files (.vec) can reach hundreds of MB for full 1800s runs.
+# Install Git LFS before cloning: https://git-lfs.github.com/
+*.vec filter=lfs diff=lfs merge=lfs -text

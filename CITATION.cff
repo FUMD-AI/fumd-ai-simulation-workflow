@@ -1,0 +1,65 @@
+cff-version: 1.2.0
+message: "If you use this workflow, please cite it as below."
+title: "FUMD-AI Simulation Workflow: Installing, Patching and Running the OMNeT++ 5G Urban Simulation Environment"
+type: software
+authors:
+  - family-names: Bernad
+    given-names: Cristina
+    affiliation: "Miguel Hernandez University"
+    orcid: "https://orcid.org/0000-0001-9537-415X"
+  - family-names: Filiposka
+    given-names: Sonja
+    affiliation: "Ss. Cyril and Methodius University in Skopje"
+    orcid: "https://orcid.org/0000-0003-0034-2855"
+  - family-names: Gilly
+    given-names: Katya
+    affiliation: "Miguel Hernandez University"
+    orcid: "https://orcid.org/0000-0002-8985-0639"
+repository-code: "https://github.com/FUMD-AI/fumd-ai-simulation-workflow"
+url: "https://eosc.eu/horizon-europe-projects/fumd-ai"
+license: MIT
+version: "1.0.0"
+date-released: "2026-08-31"
+keywords:
+  - "5G NR"
+  - "OMNeT++"
+  - "Simu5G"
+  - "Veins"
+  - "SUMO"
+  - "vehicular networks"
+  - "handover prediction"
+  - "urban mobility"
+  - "EOSC"
+  - "FAIR workflow"
+abstract: >
+  This repository provides the complete workflow to install, patch, configure
+  and run the 5G NR urban vehicular simulation environment used by the FUMD-AI
+  project to generate synthetic network performance data for AI-based handover
+  prediction. The simulation combines OMNeT++ 6.3.0, Simu5G 1.4.4, INET 4.5.4,
+  Veins 5.3.1, and SUMO 1.22.0, modelling 9 NR gNodeBs in the Alicante city
+  centre with SUMO-driven vehicle mobility.
+references:
+  - type: software
+    title: "Simu5G"
+    version: "1.4.4"
+    url: "https://github.com/Unipisa/Simu5G/releases/tag/v1.4.4"
+    authors:
+      - family-names: Nardini
+        given-names: Giovanni
+      - family-names: Stea
+        given-names: Giovanni
+      - family-names: Virdis
+        given-names: Antonio
+  - type: software
+    title: "Veins"
+    version: "5.3.1"
+    url: "https://veins.car2x.org"
+    authors:
+      - family-names: Sommer
+        given-names: Christoph
+  - type: software
+    title: "SUMO - Simulation of Urban MObility"
+    version: "1.22.0"
+    url: "https://sumo.dlr.de"
+    authors:
+      - name: "Eclipse SUMO contributors"
